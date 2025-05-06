@@ -1,36 +1,35 @@
-
-import Icon from "@/components/ui/Icon";
+import { Globe, Briefcase, Home, Car, Users, Heart } from "lucide-react";
 
 const features = [
   {
     title: "Реалистичный игровой мир",
     description: "Погрузитесь в атмосферу настоящего города с проработанной экономикой и социальными системами.",
-    icon: "Globe"
+    icon: <Globe className="text-white" size={24} />
   },
   {
     title: "Разнообразие профессий",
     description: "Выберите одну из сотен доступных работ: от полицейского до бизнесмена или криминального авторитета.",
-    icon: "Briefcase"
+    icon: <Briefcase className="text-white" size={24} />
   },
   {
     title: "Собственная недвижимость",
     description: "Приобретайте дома, квартиры, бизнесы и другие объекты недвижимости в игровом мире.",
-    icon: "Home"
+    icon: <Home className="text-white" size={24} />
   },
   {
     title: "Система транспорта",
     description: "Огромный выбор транспортных средств с реалистичной физикой и настройкой внешнего вида.",
-    icon: "Car"
+    icon: <Car className="text-white" size={24} />
   },
   {
     title: "Фракции и организации",
     description: "Вступайте в государственные структуры или создавайте собственные организации.",
-    icon: "Users"
+    icon: <Users className="text-white" size={24} />
   },
   {
     title: "Активное сообщество",
     description: "Тысячи активных игроков, регулярные мероприятия и постоянные обновления контента.",
-    icon: "Heart"
+    icon: <Heart className="text-white" size={24} />
   }
 ];
 
@@ -52,7 +51,7 @@ const Features = () => {
               className="bg-gray-800 rounded-lg p-6 transition-transform hover:scale-105 hover:shadow-lg border border-gray-700"
             >
               <div className="rounded-full bg-purple-600 p-3 inline-block mb-4">
-                <Icon name={feature.icon} className="text-white" size={24} />
+                {feature.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>

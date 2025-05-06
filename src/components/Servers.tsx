@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { Progress } from "@/components/ui/progress";
-import Icon from "@/components/ui/Icon";
+import { Signal, Users } from "lucide-react";
 
 const serversList = [
   { 
@@ -67,7 +66,7 @@ const Servers = () => {
           </p>
           <div className="bg-gray-800 inline-block rounded-lg px-6 py-3 mb-6">
             <div className="flex items-center justify-center gap-2 text-white">
-              <Icon name="Users" size={20} className="text-purple-500" />
+              <Users size={20} className="text-purple-500" />
               <span className="font-medium">Всего игроков онлайн: </span>
               <span className="font-bold text-purple-500">{totalOnlinePlayers}/{totalSlots}</span>
             </div>
@@ -142,7 +141,7 @@ const Servers = () => {
                   <div className="bg-gray-700 rounded-lg p-4">
                     <div className="flex items-center">
                       <div className="rounded-full bg-purple-600/20 p-2 mr-3">
-                        <Icon name="Signal" className="text-purple-500" size={20} />
+                        <Signal className="text-purple-500" size={20} />
                       </div>
                       <div>
                         <div className="text-gray-400 text-sm">Пинг</div>
@@ -154,7 +153,7 @@ const Servers = () => {
                   <div className="bg-gray-700 rounded-lg p-4">
                     <div className="flex items-center">
                       <div className="rounded-full bg-purple-600/20 p-2 mr-3">
-                        <Icon name="Users" className="text-purple-500" size={20} />
+                        <Users className="text-purple-500" size={20} />
                       </div>
                       <div>
                         <div className="text-gray-400 text-sm">Очередь</div>

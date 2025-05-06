@@ -1,28 +1,27 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import Icon from "@/components/ui/Icon";
+import { UserPlus, Download, User, Play } from "lucide-react";
 
 const steps = [
   {
     title: "Регистрация",
     description: "Зарегистрируйтесь на нашем сайте и создайте личный кабинет",
-    icon: "UserPlus"
+    icon: <UserPlus className="text-white" size={20} />
   },
   {
     title: "Скачивание",
     description: "Установите GTA 5 и наш лаунчер для подключения к серверам",
-    icon: "Download"
+    icon: <Download className="text-white" size={20} />
   },
   {
     title: "Создание персонажа",
     description: "Создайте уникального персонажа и придумайте ему биографию",
-    icon: "User"
+    icon: <User className="text-white" size={20} />
   },
   {
     title: "Начало игры",
     description: "Пройдите обучение и начните свой путь в мире MD RP",
-    icon: "Play"
+    icon: <Play className="text-white" size={20} />
   }
 ];
 
@@ -47,12 +46,12 @@ const HowToStart = () => {
                 <div className={`md:flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   {/* Иконка на линии (только на десктопе) */}
                   <div className="hidden md:flex absolute left-1/2 -ml-6 w-12 h-12 rounded-full bg-purple-600 items-center justify-center">
-                    <Icon name={step.icon} className="text-white" size={20} />
+                    {step.icon}
                   </div>
                   
                   {/* Мобильная иконка */}
                   <div className="flex md:hidden mb-4 w-12 h-12 mx-auto rounded-full bg-purple-600 items-center justify-center">
-                    <Icon name={step.icon} className="text-white" size={20} />
+                    {step.icon}
                   </div>
                   
                   <div className={`md:w-5/12 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>

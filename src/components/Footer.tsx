@@ -1,6 +1,6 @@
-
 import { Link } from "react-router-dom";
-import Icon from "@/components/ui/Icon";
+import { Facebook, Twitter, Instagram, Youtube, MessageCircle } from "lucide-react";
+// import Icon from "@/components/ui/Icon";
 
 const Footer = () => {
   return (
@@ -16,19 +16,19 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors">
-                <Icon name="Facebook" size={20} />
+                <Facebook size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors">
-                <Icon name="Twitter" size={20} />
+                <Twitter size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors">
-                <Icon name="Instagram" size={20} />
+                <Instagram size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors">
-                <Icon name="Youtube" size={20} />
+                <Youtube size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-purple-500 transition-colors">
-                <Icon name="Discord" size={20} />
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
