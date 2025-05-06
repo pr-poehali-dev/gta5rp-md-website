@@ -39,11 +39,11 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-700">
-              Личный кабинет
+            <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-700" asChild>
+              <Link to="/auth">Личный кабинет</Link>
             </Button>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-              Начать играть
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+              <Link to="/how-to-play">Начать играть</Link>
             </Button>
           </div>
           <div className="md:hidden">
@@ -77,11 +77,11 @@ const Navbar = () => {
               Форум
             </Link>
             <div className="flex flex-col space-y-2 mt-4 px-3 py-2">
-              <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-700">
-                Личный кабинет
+              <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-700" asChild>
+                <Link to="/auth">Личный кабинет</Link>
               </Button>
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-                Начать играть
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+                <Link to="/how-to-play">Начать играть</Link>
               </Button>
             </div>
           </div>

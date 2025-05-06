@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, MessageCircle } from "lucide-react";
-// import Icon from "@/components/ui/Icon";
 
 const Footer = () => {
   return (
